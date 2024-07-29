@@ -1,0 +1,264 @@
+@media only screen and (max-width: 480px) {
+
+    .wrapper {
+        display: block;
+        /* flex-direction: column; */
+        width: 100%;
+        height: 100vh;
+        margin: 0px auto 10px auto;
+        gap: 10px;
+    }
+
+
+
+    .left {
+        scrollbar-width: none;
+        flex: 1;
+        overflow-y: auto;
+        position: relative;
+        padding: 20px 0;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .left-box {
+        display: flex;
+        margin: 0;
+        padding-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .profile-card {
+        background-color: #1e1e1f;
+        color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        width: 85%;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        padding: 40px 20px 20px 20px;
+        border: 1px solid #414141;
+        position: relative;
+
+
+    }
+
+
+    .imgAndInfoFlex {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+
+
+
+    .detail {
+        display: flex;
+        align-items: center;
+        margin: 30px 0;
+    }
+
+    #expand-button {
+        position: absolute;
+        display: flex;
+        background-color: #2e2e2e;
+        color: #414141;
+        padding: 10px 20px;
+        cursor: pointer;
+        top: 0px;
+        right: 0px;
+        border: 1px solid #4d4d4d;
+        border-radius: 0 20px;
+
+
+    }
+
+    #expand-button:hover {
+        background-color: #f1c40f;
+        color: #2e2e2e;
+    }
+
+    /* Smooth expand/shrink animation */
+    #expandable-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+    #expandable-content.expanded {
+        max-height: 730px;
+        /* Adjust to a value that fits your content */
+    }
+
+
+
+    .right {
+        /* flex: 1;
+        overflow-y: auto;
+        scrollbar-width: none;
+        padding: 71px 0 0; */
+
+        display: flex;
+        margin: 0;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .right-box {
+        width: 100%;
+        padding: 40px 20px;
+        color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        overflow-y: auto;
+        font-family: 'Arial', sans-serif;
+        background-color: #1e1e1f;
+        border: 1px solid #414141;
+        position: relative;
+        display: block;
+        margin-bottom: 20px;
+
+    }
+
+
+    .navbar {
+        display: none;
+
+    }
+
+    .mobile-view-navbar {
+        display: flex;
+        bottom: 0px;
+        width: 90vw;
+        height: 45px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        background-color: #414141ce;
+        position: fixed;
+        color: white;
+        border-radius: 8px;
+        border: 1px solid #414141;
+        left: 4.5%;
+        z-index: 3;
+
+    }
+
+
+    .mobile-view-navbar a {
+        color: #b0b0b0;
+        text-decoration: none;
+        padding-inline: 1vw;
+        font-size: small;
+        transition: color 0.3s;
+    }
+
+    .mobile-view-navbar a:hover {
+        color: #f5c518;
+    }
+
+    .mobile-view-navbar a.active {
+        color: #f5c518;
+    }
+
+
+
+
+
+
+    .services {
+        padding: 20px 0px;
+    }
+
+    .service {
+        background-color: #252525;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        width: 100%;
+        border: 1px solid #414141;
+
+    }
+
+
+    .service-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .service img {
+        flex: 1;
+    }
+
+    .service h3 {
+        flex: 1;
+
+    }
+
+
+
+    .service p {
+        padding: 0px;
+    }
+
+    .gridd {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 22px;
+        align-items: center;
+        justify-items: center;
+        padding: 10px 20px;
+
+    }
+
+    #applications,
+    #web-development {
+        display: none;
+    }
+
+
+    .project-card-container {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+
+    .project-nav button {
+        background-color: transparent;
+        border: none;
+        color: white;
+        padding: 10px 10px;
+        margin: 0 5px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
